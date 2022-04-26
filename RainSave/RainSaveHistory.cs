@@ -11,6 +11,8 @@ namespace RainSave
         public double WaterTariff { get; set; }
         public double WaterSaved { get; set; }
         public string DateString { get; set; }
+        public string DateStringYear { get; set; }
+        public string DateStringMonth { get; set; }
         public string CostSaved { get; set; }
         public int Dum { get; set; }
         public string WaterCollectString { get; set; }

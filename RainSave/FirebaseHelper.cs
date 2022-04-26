@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Collections.Generic;
 using System.Text;
 using Firebase;
@@ -28,7 +29,7 @@ namespace RainSave
                 .OnceAsync<RainSaveHistory>()).Select(item => new RainSaveHistory
                 {
                     DateRecorded = item.Object.DateRecorded,
-                    DateString = item.Object.DateRecorded.ToString("dd/M/yyyy"),
+                    DateString = item.Object.DateRecorded.ToString("dd/MM/yyyy"),
                     WaterCollect = item.Object.WaterCollect,
                     WaterTariff = item.Object.WaterTariff,
                     WaterSaved = item.Object.WaterSaved,
@@ -46,9 +47,9 @@ namespace RainSave
                {
                    DateString = string.Format("{0}/{1}", x.Key.Month, x.Key.Year),
                    WaterCollect = x.Sum(i => i.WaterCollect),
-                   WaterSavedString = x.Sum(i => i.WaterSaved).ToString("F")
+                   WaterSavedString = x.Sum(i => i.WaterSaved).ToString("F"),
                })
-               //.OrderByDescending(x => x.DateRecorded)
+               .OrderByDescending(x => x.DateRecorded)
                .ToList();
         }
         public async Task<RainSaveHistory> CostSaved()
