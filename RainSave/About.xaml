@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RainSave.About">
+    <ContentPage.Content>
+        <StackLayout Padding="10,20,10,20">
+            <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout Margin="0,0,0,20">
+                    <Label FontAttributes="Bold" FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Build rainwater collector/harvester:
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Rainwater collection can be done DIY with lower cost. By only using water tank, mesh filte, pipes and check valve (one-way valve)
+                    </Label>
+                    <Label FontSize="Body" TextColor="#262626">
+                        If proper equipment needed, ther are several rainwater harvesting system distributor out there.
+                    </Label>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,10">
+                    <Label FontAttributes="Bold" FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Maintenance:
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        To prevent branches or leaves from entering the tank, kindly use mesh filter on the water inlet.
+                    </Label>
+                    <Label FontSize="Body" TextColor="#262626">
+                        To prevent mosquitoes from breeding in the tank, use mosquitoes BTI (Non-toxic insecticide)
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                <Label>Created by Mohd Arsyad (SW0105692)</Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

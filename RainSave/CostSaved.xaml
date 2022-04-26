@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RainSave.CostSaved">
+    <ContentPage.Content>
+        <StackLayout Padding="10,20,10,20">
+            <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout Margin="0,0,0,20">
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Congratulation!
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" x:Name="display" Text="So far, you saved RM0 by recycling rain water instead of using freshwaters." TextColor="#262626"/>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Planet Earth covered by 70% of water, but why are scientist says that we are running out fresh water?
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        Well, study shows that global freshwater demand are getting higher. Water demand globally are projected to increase by 55% between year 2000 and 2050.
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        So, we can recycle rainwater for daily heavy water usage, such as:
+                    </Label>
+                    <Label FontSize="Body" Margin="30,0,0,0" TextColor="#262626">
+                        • Gardening
+                    </Label>
+                    <Label FontSize="Body" Margin="30,0,0,0" TextColor="#262626">
+                        • Toilet flush
+                    </Label>
+                    <Label FontSize="Body" Margin="30,0,0,10" TextColor="#262626">
+                        • Washing car(s)
+                    </Label>
+                    <Label FontSize="Body" Margin="0,0,0,10" TextColor="#262626">
+                        You've done your part to save the planet from decreasing of freshwater supply!
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout VerticalOptions="End" HorizontalOptions="CenterAndExpand">
+                <Label>Created by Mohd Arsyad (SW0105692)</Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
